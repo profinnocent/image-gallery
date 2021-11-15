@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 50px;
+  /* height: 100%; */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  /* column-gap: 40px;
+  row-gap: 40px; */
+  gap: 2%;
+}
+
+.pix2 {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+.pix4 {
+  grid-row: span 2;
+}
+
+.pix5 {
+  grid-row: span 2;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.anchor {
+  margin-top: 200px;
+  font-size: 40px;
+}
+
+
+
+.img1 {
+  transition: width 5s, height 5s;
+}
+
+.pix1:hover .img1{
+  width: 10%;
+  height: 10%;
+}
+
+.img2 {
+  transition: height 5s;
+}
+
+.pix2:hover .img2{
+  height: 5%;
+}
+
+.img3 {
+  transition: width 5s, height 5s, transform 5s;
+}
+
+.pix3:hover .img3{
+  transform: rotate(180deg);
+  width: 20%;
+  height: 20%;
+}
+
+.img4 {
+  transition: transform 3s, width 5s, height 5s;
+}
+
+.pix4:hover .img4{
+  transform: rotate(-50deg);
+  width: 200%;
+  height: 200%;
+}
+
+.img5 {
+  transition: opacity 4s;
+}
+
+.img5:hover {
+  opacity: 0.1;
+}
+
+.img6 {
+  transition: skew 10s;
+}
+
+.img6:hover {
+  transform: skew(30deg);
+}
+
+.img7 {
+  transition: transform 4s;
+}
+
+.img7:hover {
+  transform: skewY(30deg);
+}
+
+.img8 {
+  transition: transform 4s;
+}
+
+.img8:hover {
+  transform: skew(30deg);
+  transform: translate(40px,50px);
+}
+
+.img9 {
+  transition: translate 4s;
+}
+
+.pix9:hover .img9{
+  transform: translate(30px);
+}
+
+
+.img10 {
+  transition: transform 3s, opacity 4s;
+  transition-delay: 1s;
+  /* transform-style: preserve-3d; */
+}
+
+.pix10:hover .img10{
+  transform: translateY(100px);
+}
+

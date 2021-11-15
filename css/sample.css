@@ -1,0 +1,93 @@
+h1 {
+  font-size: 200px;
+  color: red;
+  background-color: yellow;
+}
+
+h1:hover {
+  color: green;
+  background-color: hotpink;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+
+  transition: width 5s, height 5s, transform 4s;
+}
+
+img:hover {
+  width: 1000px;
+  height: 1000px;
+  transform: rotate(270deg);
+  /* transform: translate; */
+}
+
+.a {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  animation-name: testing;
+  /* animation-duration: 5s;
+    animation-iteration-count: 10; */
+}
+
+@keyframes testing {
+  from {
+    background-color: red;
+    width: 500px;
+    transform: translate(20px, 20px);
+  }
+  to {
+    background-color: green;
+    width: 1000px;
+    height: 1000px;
+    transform: translate(300px, 300px);
+  }
+}
+
+.b {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  animation-name: testing1;
+  animation-duration: 10s;
+    animation-iteration-count: 10;
+}
+
+@keyframes testing1 {
+  0% {
+    background-color: red;
+    width: 500px;
+    transform: translate(20px, 20px);
+  }
+  25% {
+    background-color: green;
+    width: 1000px;
+    height: 1000px;
+    transform: translate(50px, 50px);
+  }
+  50% {
+    background-color: rgb(184, 31, 158);
+    width: 1000px;
+    height: 1000px;
+    transform: translate(100px, -100px);
+  }
+  75% {
+    background-color: rgb(38, 0, 128);
+    width: 1000px;
+    height: 1000px;
+    transform: translate(100px, -200px);
+  }
+  100% {
+    background-color: rgb(38, 0, 128);
+    width: 100px;
+    height: 100px;
+    transform: translate(50px, -300px);
+  }
+}
+
+.anchor {
+    margin-top: 200px;
+    font-size: 40px;
+  }
